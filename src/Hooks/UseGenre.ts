@@ -1,4 +1,4 @@
-import { useStatStyles } from "@chakra-ui/react"
+
 import { useEffect, useState } from "react"
 import apiClient from "../component/services/api-client";
 import { CanceledError } from "axios";
@@ -6,6 +6,7 @@ import { CanceledError } from "axios";
 interface Genre{
     id: number;
     name: string
+    image_background: string;
 }
 
 interface FetchGenreResponse{

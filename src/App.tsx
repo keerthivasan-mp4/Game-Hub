@@ -6,7 +6,11 @@ import Genre from './component/Genre';
 
 
 
+
+
 function App(){
+
+
   return(
     <Grid templateAreas={{base:`"nav" "main"`,
       lg:`"nav nav" "aside main"`,
@@ -22,7 +26,9 @@ function App(){
 
       
       <Show above='lg'>
-      <GridItem area='aside' bg=""><Genre /></GridItem>
+      <GridItem area='aside' bg="">
+        <Genre  />
+        </GridItem>
 
       </Show>
 
