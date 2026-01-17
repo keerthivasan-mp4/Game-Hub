@@ -2,8 +2,13 @@ import { Grid, GridItem, Show} from '@chakra-ui/react'
 
 import NavBar from './component/NavBar';
 import GameGrid from './component/GameGrid';
-import  Genre from './component/Genre';
-// import  {Genre} from "./Hooks/UseGenre.ts"
+
+import PlatformSelector from './component/PlatformSelector';
+
+
+// import  Genre from './component/Genre';
+// import { useState } from 'react';
+// import type  Genre  from "./Hooks/UseGenre.ts";
 
 
 
@@ -11,9 +16,6 @@ import  Genre from './component/Genre';
 
 
 function App(){
-
-
-
 
   return(
     <Grid templateAreas={{base:`"nav" "main"`,
@@ -25,14 +27,15 @@ function App(){
       </GridItem>
 
       <GridItem area='main' bg="">
-        <GameGrid/>
+        <PlatformSelector/>
+        <GameGrid  />
       </GridItem>
  
       
       <Show above='lg' >
-      <GridItem area='aside' paddingX={'4'}>
+      {/* <GridItem area='aside' paddingX={'4'}>
         <Genre />
-        </GridItem>
+        </GridItem> */}
 
       </Show>
 
