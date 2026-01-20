@@ -14,23 +14,25 @@ interface Props{
 const PlatformSelector=({onSelectPlatform}:Props)=>{
 
     const{data} = usePlatforms();
+    
 
     
        
     return(
         <Menu>
-            <MenuButton as={Button} rightIcon={<BsChevronBarDown/>} marginLeft={3}> Platforms
-                <MenuList>
+            <MenuButton as={Button} rightIcon={<BsChevronBarDown/>} marginLeft={3}> Platforms:
+               
+            </MenuButton>
+             <MenuList>
                   
                   {data.map(platform => 
-                    <MenuItem onClick={()=> onSelectPlatform(platform)} key={platform.id}>
+                    <MenuItem  onClick={()=> onSelectPlatform(platform)} key={platform.id}>
                         
                   {platform.name}
                   </MenuItem>)}
 
                    
                 </MenuList>
-            </MenuButton>
         </Menu>
 
     )
