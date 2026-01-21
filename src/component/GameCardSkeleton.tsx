@@ -1,18 +1,18 @@
+import { Card, CardBody, Skeleton, SkeletonText } from "@chakra-ui/react";
 
-import { Card, CardBody, Skeleton, SkeletonText } from "@chakra-ui/react"
-
-const GameCardSKeleton = ()=>{
-    return(
-        // <Card >borderRadius='20px'  width='400px'justifyContent={'space-evenly'}
+const GameCardSKeleton = () => {
+  return (
     <Card>
-    <Skeleton borderRadius='20px' height={300}>
+        
+      <Skeleton borderRadius="20px" height={300}>  {/* Skeleton wrapper to simulate loading state */}
+        
         <CardBody>
-            <SkeletonText></SkeletonText>
+          <SkeletonText noOfLines={3}></SkeletonText>
+          
         </CardBody>
-    </Skeleton>
-        </Card>
-    )
-
-}
+      </Skeleton>
+    </Card>
+  );
+};
 
 export default GameCardSKeleton;
