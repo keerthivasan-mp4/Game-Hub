@@ -2,7 +2,7 @@
 
 A modern video game discovery platform built with React and TypeScript. Users can search for games, filter by genre, and view ratings.
 
-![Project Screenshot](C:\Users\Keerthi Vasan\Pictures\Screenshots)
+ ![image alt](https://github.com/keerthivasan-mp4/GameHub/blob/412950a8bea6aa9dca160fc27374e516886263f6/demo.png)
 
 ## 🚀 Features
 - **Game Library:** Browse thousands of games using the RAWG API.
